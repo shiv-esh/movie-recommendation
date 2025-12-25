@@ -102,7 +102,7 @@ public class MovieSearchRepository {
                         .bool(b->b
                                 .must(m->m
                                         .term(t->t
-                                                .field("genre")
+                                                .field("genre.keyword")
                                                 .value(genre)
                                         )
                                 )
